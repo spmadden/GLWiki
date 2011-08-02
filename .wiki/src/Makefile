@@ -1,5 +1,5 @@
 all:
-	gcc -c -o glwplugin.so glwplugin.c
+	gcc -o glwplugin.so glwplugin.c -DXP_UNIX -shared -fPIC
 
 clean:
 	rm glwplugin.so
